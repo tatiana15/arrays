@@ -1,0 +1,54 @@
+/* Tatiana Castro
+   tatiana.cv@hotmail.com
+   arrrays1.cpp
+*/
+#include <iostream> 
+#include <string> 
+
+using namespace std; 
+
+int SIZE=5;  	// el size del array letra para guardar 5 "letter grades"
+int numRows=5;		// el numero de "rows" que hay en el array de dos dimensiones
+int COLS=2;		// el numero de columnas que hay en el array de dos dimensiones
+int SIZE2=4; 		// para guardar 4 examenes en para cada de los cinco estudianetes
+
+int main(){
+string nombre[numRows][COLS];	//donde se va a guardar los nombre de los estudiantes
+char letra[SIZE];		//donde se va a guardar la letra correspondiente de los est.
+double student1 [SIZE2];	// nota de las primeras 4 notas de prim. est.
+double student2 [SIZE2];	// nota de las primeras 4 notas de 2  est.
+double student3 [SIZE2];	// nota de las primeras 4 notas de 3 est.
+double student4 [SIZE2];	// nota de las primeras 4 notas de 4  est.
+double student5 [SIZE2];	// nota de las primeras 4 notas de 5  est.
+
+cout<<"Escribe los nombre de los cinco estudiantes"<<endl;
+for(int i=0; i<numRows; i++)
+	for(int j=0; j<COLS; j++){
+	cin>>nombre[i][j];
+	}
+cout<<"Escriba la letra de la nota de cada estudiante"<<endl;
+for(int i=0; i<SIZE;i++)
+	cin>>letra[i];
+
+cout<<"Escriba las notas de los cuatro examenes del #1 estudiante"<<endl;
+for(int i=0; i<SIZE2;i++)
+	cin>>student1[i];
+
+cout<<"Escriba las notas de los cuatro examenes del #2 estudiante"<<endl;
+for(int i=0; i<SIZE2;i++)
+        cin>>student2[i];
+
+cout<<"Escriba las notas de los cuatro examenes del #3 estudiante"<<endl;
+for(int i=0; i<SIZE2;i++)
+        cin>>student3[i];
+
+cout<<"Escriba las notas de los cuatro examenes del #4 estudiante"<<endl;
+for(int i=0; i<SIZE2;i++)
+        cin>>student4[i];
+
+cout<<"Escriba las notas de los cuatro examenes del #5 estudiante"<<endl;
+for(int i=0; i<SIZE2;i++)
+        cin>>student5[i];
+
+return 0; 
+}
